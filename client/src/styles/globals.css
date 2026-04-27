@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-board-bg text-card-text font-game;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-board-surface;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-board-border rounded;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-federation text-white rounded hover:bg-blue-400
+           disabled:opacity-40 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-board-accent text-card-text rounded hover:bg-board-border
+           disabled:opacity-40 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-klingon text-white rounded hover:bg-red-400
+           disabled:opacity-40 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .input-field {
+    @apply bg-board-surface border border-board-border rounded px-3 py-2
+           text-card-text placeholder-card-dim focus:outline-none
+           focus:border-federation w-full;
+  }
+
+  .panel {
+    @apply bg-board-surface border border-board-border rounded-lg p-4;
+  }
+}
