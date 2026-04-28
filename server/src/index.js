@@ -4,6 +4,7 @@ import { Server } from 'socket.io';
 import cors from 'cors';
 import { LobbyManager } from './lobby/LobbyManager.js';
 import { registerLobbyHandlers } from './lobby/lobbyHandlers.js';
+import { registerChatHandlers } from './lobby/chatHandlers.js';
 
 const PORT = process.env.PORT || 3001;
 
@@ -20,17 +21,17 @@ const io = new Server(httpServer, {
   },
 });
 
-// Health check endpoint
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', rooms: lobbyManager.getRoomCount() });
 });
 
-const lobbyManager = new LobbyManager(io);
+const lobbyManager = new LobbyManager();
 
 io.on('connection', (socket) => {
   console.log(`[socket] connected: ${socket.id}`);
 
   registerLobbyHandlers(io, socket, lobbyManager);
+  registerChatHandlers(io, socket, lobbyManager);
 
   socket.on('disconnect', (reason) => {
     console.log(`[socket] disconnected: ${socket.id} (${reason})`);

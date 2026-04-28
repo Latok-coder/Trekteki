@@ -4,12 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ST:CCG dark theme palette
         board: {
           bg:      '#0a0e1a',
           surface: '#111827',
           border:  '#1f2d45',
           accent:  '#1e3a5f',
+        },
+        // LCARS accent colours (Star Trek computer aesthetic)
+        lcars: {
+          gold: '#f5a623',
+          blue: '#5b9bd5',
+          red:  '#c0392b',
+          teal: '#1abc9c',
         },
         federation: '#3b82f6',
         klingon:    '#ef4444',
@@ -25,6 +31,20 @@ export default {
       },
       fontFamily: {
         game: ['"Share Tech Mono"', 'monospace'],
+      },
+      keyframes: {
+        'fade-in': {
+          '0%':   { opacity: '0', transform: 'translateY(4px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'slide-up': {
+          '0%':   { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in':  'fade-in 0.2s ease-out',
+        'slide-up': 'slide-up 0.25s ease-out',
       },
     },
   },
