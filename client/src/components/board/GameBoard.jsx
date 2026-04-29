@@ -77,7 +77,7 @@ export default function GameBoard({ vm }) {
         <OpponentHandCount count={oppHandCount} />
 
         {/* Opponent missions — their ships above, your visiting ships below */}
-        <div className="flex-1 overflow-x-auto overflow-y-auto px-2 pt-2">
+        <div className="flex-1 overflow-x-auto overflow-y-hidden px-2 flex flex-col justify-end pb-1">
           <MissionRow missions={oppMissions} isYours={false} />
         </div>
 
@@ -91,7 +91,7 @@ export default function GameBoard({ vm }) {
         </div>
 
         {/* Your missions — opponent visiting ships above, your ships below */}
-        <div className="flex-1 overflow-x-auto overflow-y-auto px-2 pb-2">
+        <div className="flex-1 overflow-x-auto overflow-y-hidden px-2 flex flex-col justify-start pt-1">
           <MissionRow missions={myMissions} isYours={true} />
         </div>
 
