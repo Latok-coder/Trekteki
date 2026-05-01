@@ -1,0 +1,45 @@
+{
+  "id": "P-KHOS",
+  "title": "Khos",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 2,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Biology",
+    "Medical",
+    "Navigation",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 4,
+  "strength": 6,
+  "gameText": "When an opponent's personnel is killed, this personnel is attributes +2 until the end of this turn (limit +4).",
+  "abilities": [
+    {
+      "id": "khos-buff",
+      "type": "response",
+      "trigger": "opponent_personnel_killed",
+      "optional": false,
+      "effect": {
+        "type": "attribute_modifier",
+        "subject": "self",
+        "modifier": {
+          "integrity": 2,
+          "cunning": 2,
+          "strength": 2
+        },
+        "limit": 4,
+        "duration": "end_of_turn"
+      }
+    }
+  ]
+}

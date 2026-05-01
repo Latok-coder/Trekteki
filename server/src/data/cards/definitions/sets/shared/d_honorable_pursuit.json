@@ -1,0 +1,25 @@
+{
+  "id": "D-HONORABLE-PURSUIT",
+  "title": "Honorable Pursuit",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Choose an Honor personnel to be stopped. Unless the personnel stopped by this dilemma has 2 Honor, this dilemma returns to its owner's dilemma pile.",
+  "abilities": [
+    {
+      "id": "hp-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "choose_to_stop",
+          "filter": {
+            "skill": "Honor"
+          }
+        }
+      ],
+      "placement": "dilemma_pile_if_no_2honor"
+    }
+  ]
+}

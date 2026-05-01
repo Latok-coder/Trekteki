@@ -160,6 +160,17 @@ export default function HomePage() {
           </form>
         )}
 
+        {/* Deck Builder link */}
+        <div className="text-center">
+          <button
+            onClick={() => navigate('/deckbuilder')}
+            className="text-lcars-blue/70 hover:text-lcars-blue text-xs
+                       underline underline-offset-2 transition-colors"
+          >
+            Deck Builder
+          </button>
+        </div>
+
         {/* Connection indicator */}
         <div className="flex items-center justify-center gap-2 text-xs text-card-dim">
           <span

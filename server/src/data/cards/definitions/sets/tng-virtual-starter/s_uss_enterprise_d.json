@@ -1,0 +1,50 @@
+{
+  "id": "S-USS-ENTERPRISE-D",
+  "title": "U.S.S. Enterprise-D",
+  "subtitle": "Diplomatic Envoy",
+  "type": "ship",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 6,
+  "unique": true,
+  "shipClass": "Galaxy Class",
+  "icons": [
+    "tng"
+  ],
+  "staffingRequirements": [
+    "command",
+    "staff",
+    "staff",
+    "staff"
+  ],
+  "range": 8,
+  "weapons": 8,
+  "shields": 9,
+  "gameText": "When you complete this mission, if this ship is staffed and at that mission, score 5 points. You may do this only once each turn.",
+  "abilities": [
+    {
+      "id": "ent-d-score",
+      "type": "response",
+      "trigger": "on_mission_complete",
+      "condition": {
+        "type": "and",
+        "conditions": [
+          {
+            "type": "ship_staffed",
+            "subject": "self"
+          },
+          {
+            "type": "ship_at_mission",
+            "subject": "self"
+          }
+        ]
+      },
+      "optional": true,
+      "effect": {
+        "type": "score_points",
+        "amount": 5
+      },
+      "limit": "once_per_turn"
+    }
+  ]
+}

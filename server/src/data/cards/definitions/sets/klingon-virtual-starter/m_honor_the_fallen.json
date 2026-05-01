@@ -1,0 +1,34 @@
+{
+  "id": "M-HONOR-THE-FALLEN",
+  "title": "Honor the Fallen",
+  "subtitle": null,
+  "type": "mission",
+  "missionType": "planet",
+  "set": "klingon-virtual-starter",
+  "unique": true,
+  "span": 3,
+  "points": 40,
+  "quadrant": "A",
+  "affiliations": [
+    "klingon",
+    "federation",
+    "bajoran"
+  ],
+  "requirements": "Engineer, 2 Honor, Medical, Officer, and Integrity>38",
+  "gameText": "When your personnel complete this mission, you may remove a personnel in your discard pile from the game to restore all Range of each of your ships.",
+  "abilities": [
+    {
+      "id": "htf-restore",
+      "type": "response",
+      "trigger": "on_mission_complete",
+      "optional": true,
+      "cost": {
+        "type": "remove_from_discard",
+        "count": 1
+      },
+      "effect": {
+        "type": "restore_all_range"
+      }
+    }
+  ]
+}

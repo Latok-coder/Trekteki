@@ -1,0 +1,34 @@
+{
+  "id": "M-VALT-MINOR",
+  "title": "Valt Minor",
+  "subtitle": "Brute Force",
+  "type": "mission",
+  "missionType": "planet",
+  "set": "klingon-virtual-starter",
+  "unique": true,
+  "span": 2,
+  "points": 40,
+  "quadrant": "A",
+  "affiliations": [
+    "klingon",
+    "federation"
+  ],
+  "requirements": "2 Leadership, 3 Security, and Strength>38",
+  "gameText": "When you complete this mission, if each of your personnel here is a Klingon personnel, score 5 points.",
+  "abilities": [
+    {
+      "id": "valt-bonus",
+      "type": "response",
+      "trigger": "on_mission_complete",
+      "optional": false,
+      "condition": {
+        "type": "all_personnel_are",
+        "species": "Klingon"
+      },
+      "effect": {
+        "type": "score_points",
+        "amount": 5
+      }
+    }
+  ]
+}

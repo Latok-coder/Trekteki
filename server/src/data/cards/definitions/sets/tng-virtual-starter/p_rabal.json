@@ -1,0 +1,29 @@
+{
+  "id": "P-RABAL",
+  "title": "Rabal",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": false,
+  "species": "Hekaran",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Engineer",
+    "Physics",
+    "Programming",
+    "Transporters"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 4,
+  "cunning": 6,
+  "strength": 5,
+  "gameText": "A partially empathic species, Napeans typically seek interaction with other races to explore alien thought patterns.",
+  "abilities": []
+}

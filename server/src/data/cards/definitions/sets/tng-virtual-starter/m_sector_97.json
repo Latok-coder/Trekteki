@@ -1,0 +1,18 @@
+{
+  "id": "M-SECTOR-97",
+  "title": "Sector 97",
+  "subtitle": "Explore Black Cluster",
+  "type": "mission",
+  "missionType": "space",
+  "set": "tng-virtual-starter",
+  "unique": true,
+  "span": 4,
+  "points": 35,
+  "quadrant": "A",
+  "affiliations": [
+    "any_except_borg"
+  ],
+  "requirements": "Astrometrics, Leadership, Physics, Science, and Cunning>34",
+  "gameText": "Any affiliation (except Borg) may attempt this mission.",
+  "abilities": []
+}

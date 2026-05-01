@@ -1,0 +1,18 @@
+{
+  "id": "D-TIMESCAPE",
+  "title": "Timescape",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "Place this dilemma on this mission. You cannot begin a mission attempt at this mission. At the end of this turn, this dilemma returns to its owner's dilemma pile.",
+  "abilities": [
+    {
+      "id": "ts-main",
+      "type": "dilemma_effect",
+      "placement": "mission",
+      "end_of_turn_return": true
+    }
+  ]
+}

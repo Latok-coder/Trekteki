@@ -1,0 +1,48 @@
+{
+  "id": "P-DATA",
+  "title": "Data",
+  "subtitle": "Proud Father",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 6,
+  "unique": true,
+  "species": "Android",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Anthropology",
+    "Engineer",
+    "Exobiology",
+    "Physics",
+    "Programming",
+    "Science"
+  ],
+  "skillLevels": {
+    "Programming": 2
+  },
+  "keywords": [],
+  "integrity": 7,
+  "cunning": 10,
+  "strength": 10,
+  "gameText": "When you play this personnel, the next Android you play this turn is cost -2.",
+  "abilities": [
+    {
+      "id": "data-android-discount",
+      "type": "response",
+      "trigger": "on_play",
+      "optional": false,
+      "effect": {
+        "type": "cost_modifier",
+        "filter": {
+          "species": "Android"
+        },
+        "amount": -2,
+        "duration": "rest_of_turn",
+        "limit": 1
+      }
+    }
+  ]
+}

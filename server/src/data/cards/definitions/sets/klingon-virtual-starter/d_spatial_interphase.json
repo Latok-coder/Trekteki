@@ -1,0 +1,35 @@
+{
+  "id": "D-SPATIAL-INTERPHASE",
+  "title": "Spatial Interphase",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 6,
+  "unique": false,
+  "gameText": "For each mission worth 40 or more points that your opponent commands, this dilemma is cost -2. Your opponent chooses a personnel who has three or more Klingon icons to be killed. If you cannot, randomly select a personnel to be killed.",
+  "abilities": [
+    {
+      "id": "si-main",
+      "type": "dilemma_effect",
+      "cost_modifier": {
+        "per_opponent_40pt_mission": -2
+      },
+      "actions": [
+        {
+          "type": "opponent_choose_to_kill",
+          "filter": {
+            "icon_count": {
+              "icon": "klingon",
+              "count": 3
+            }
+          },
+          "fallback": {
+            "type": "random_kill",
+            "count": 1
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

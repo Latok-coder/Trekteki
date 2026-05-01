@@ -1,0 +1,43 @@
+{
+  "id": "P-WESLEY-CRUSHER",
+  "title": "Wesley Crusher",
+  "subtitle": "Apprentice Traveler",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 5,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Anthropology",
+    "Astrometrics",
+    "Engineer",
+    "Honor",
+    "Physics"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 7,
+  "cunning": 8,
+  "strength": 5,
+  "gameText": "While this personnel is facing a dilemma, you may stop each personnel present and remove him from the game to end your mission attempt. That dilemma and all remaining dilemmas in the dilemma stack are returned to their owner's dilemma pile.",
+  "abilities": [
+    {
+      "id": "wc-escape",
+      "type": "response",
+      "trigger": "facing_dilemma",
+      "optional": true,
+      "cost": {
+        "type": "stop_all_present_and_remove_from_game",
+        "subject": "self"
+      },
+      "effect": {
+        "type": "end_mission_attempt_return_dilemmas"
+      }
+    }
+  ]
+}

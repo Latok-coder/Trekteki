@@ -1,0 +1,48 @@
+{
+  "id": "P-KMPEC",
+  "title": "K'mpec",
+  "subtitle": "Protector of the Empire",
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 3,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command"
+  ],
+  "skills": [
+    "Diplomacy",
+    "Law",
+    "Leadership",
+    "Security"
+  ],
+  "skillLevels": {
+    "Leadership": 2
+  },
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 7,
+  "strength": 6,
+  "gameText": "At the start of each of your turns, you may stop six Klingon Leadership personnel you command to spend 5 additional counters this turn.",
+  "abilities": [
+    {
+      "id": "kmpec-counters",
+      "type": "response",
+      "trigger": "start_of_turn",
+      "optional": true,
+      "cost": {
+        "type": "stop_personnel",
+        "filter": {
+          "affiliation": "klingon",
+          "skill": "Leadership"
+        },
+        "count": 6
+      },
+      "effect": {
+        "type": "bonus_counters",
+        "amount": 5
+      }
+    }
+  ]
+}

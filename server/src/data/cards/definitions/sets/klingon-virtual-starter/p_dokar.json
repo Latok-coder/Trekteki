@@ -1,0 +1,43 @@
+{
+  "id": "P-DOKAR",
+  "title": "Dokar",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 1,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Biology",
+    "Navigation",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 4,
+  "strength": 7,
+  "gameText": "While an opponent commands a ship that has a Damage card on it, this personnel is attributes +2.",
+  "abilities": [
+    {
+      "id": "dok-buff",
+      "type": "continuous",
+      "condition": {
+        "type": "opponent_commands_damaged_ship"
+      },
+      "effect": {
+        "type": "attribute_modifier",
+        "subject": "self",
+        "modifier": {
+          "integrity": 2,
+          "cunning": 2,
+          "strength": 2
+        }
+      }
+    }
+  ]
+}

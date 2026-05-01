@@ -1,0 +1,44 @@
+{
+  "id": "P-BREGATH",
+  "title": "Bregath",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 2,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Archaeology",
+    "Engineer",
+    "Security",
+    "Treachery"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 4,
+  "cunning": 5,
+  "strength": 6,
+  "gameText": "While an opponent commands a ship that has a Damage card on it, this personnel is attributes +2.",
+  "abilities": [
+    {
+      "id": "breg-buff",
+      "type": "continuous",
+      "condition": {
+        "type": "opponent_commands_damaged_ship"
+      },
+      "effect": {
+        "type": "attribute_modifier",
+        "subject": "self",
+        "modifier": {
+          "integrity": 2,
+          "cunning": 2,
+          "strength": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "formatVersion": 1,
+  "id": "tng-starter",
+  "name": "TNG Starter \u2014 Federation",
+  "affiliation": "federation",
+  "missions": [
+    "M-EARTH",
+    "M-FORCAS-SECTOR",
+    "M-LAPIDEAS-SYSTEM",
+    "M-MOAB-IV",
+    "M-SECTOR-97"
+  ],
+  "deck": [
+    {
+      "definitionId": "P-BEVERLY-CRUSHER",
+      "count": 1
+    },
+    {
+      "definitionId": "P-DANIEL-KWAN",
+      "count": 2
+    },
+    {
+      "definitionId": "P-DATA",
+      "count": 1
+    },
+    {
+      "definitionId": "P-DAVIES",
+      "count": 3
+    },
+    {
+      "definitionId": "P-DEANNA-TROI",
+      "count": 1
+    },
+    {
+      "definitionId": "P-DELVOK",
+      "count": 2
+    },
+    {
+      "definitionId": "P-GEORDI-LA-FORGE",
+      "count": 1
+    },
+    {
+      "definitionId": "P-JEAN-LUC-PICARD",
+      "count": 1
+    },
+    {
+      "definitionId": "P-MILES-OBRIEN",
+      "count": 1
+    },
+    {
+      "definitionId": "P-ORFIL-QUINTEROS",
+      "count": 1
+    },
+    {
+      "definitionId": "P-RABAL",
+      "count": 2
+    },
+    {
+      "definitionId": "P-RIXX",
+      "count": 2
+    },
+    {
+      "definitionId": "P-RO-LAREN",
+      "count": 1
+    },
+    {
+      "definitionId": "P-ROBIN-LEFLER",
+      "count": 1
+    },
+    {
+      "definitionId": "P-TASHA-YAR",
+      "count": 1
+    },
+    {
+      "definitionId": "P-VAN-ORTON",
+      "count": 3
+    },
+    {
+      "definitionId": "P-WESLEY-CRUSHER",
+      "count": 1
+    },
+    {
+      "definitionId": "P-WILLIAM-RIKER",
+      "count": 1
+    },
+    {
+      "definitionId": "P-WORF",
+      "count": 1
+    },
+    {
+      "definitionId": "S-USS-ENTERPRISE-D",
+      "count": 1
+    },
+    {
+      "definitionId": "S-USS-EXCELSIOR",
+      "count": 2
+    },
+    {
+      "definitionId": "S-USS-SOVEREIGN",
+      "count": 1
+    },
+    {
+      "definitionId": "E-ALWAYS-WELCOME",
+      "count": 1
+    },
+    {
+      "definitionId": "D-UNEXPECTED-DIFFICULTIES",
+      "count": 1
+    },
+    {
+      "definitionId": "I-ESCAPE",
+      "count": 1
+    },
+    {
+      "definitionId": "I-UNINVITED",
+      "count": 1
+    }
+  ],
+  "dilemmas": [
+    {
+      "definitionId": "D-AGONIZING-ENCOUNTER",
+      "count": 1
+    },
+    {
+      "definitionId": "D-CLOWN-BITTER-MEDICINE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-DARK-PAGE",
+      "count": 2
+    },
+    {
+      "definitionId": "D-FAMILY",
+      "count": 1
+    },
+    {
+      "definitionId": "D-FERENGI-LOCATOR-BOMB",
+      "count": 1
+    },
+    {
+      "definitionId": "D-HONORABLE-PURSUIT",
+      "count": 1
+    },
+    {
+      "definitionId": "D-INTIMIDATION",
+      "count": 1
+    },
+    {
+      "definitionId": "D-MARK-OF-GIDEON",
+      "count": 1
+    },
+    {
+      "definitionId": "D-ONE-STEP-AHEAD",
+      "count": 1
+    },
+    {
+      "definitionId": "D-PERSONAL-DUTY",
+      "count": 1
+    },
+    {
+      "definitionId": "D-PILLAGE-AND-PLUNDER",
+      "count": 2
+    },
+    {
+      "definitionId": "D-SETTING-THE-STAGE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-THE-FIRST-DUTY",
+      "count": 2
+    },
+    {
+      "definitionId": "D-THE-LAUNCHING",
+      "count": 2
+    },
+    {
+      "definitionId": "D-TIMESCAPE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-WHAT-LIES-BENEATH",
+      "count": 1
+    }
+  ]
+}

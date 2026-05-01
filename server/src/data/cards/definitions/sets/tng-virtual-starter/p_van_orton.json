@@ -1,0 +1,27 @@
+{
+  "id": "P-VAN-ORTON",
+  "title": "Van Orton",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 1,
+  "unique": false,
+  "species": "Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Archaeology",
+    "Biology",
+    "Science"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 6,
+  "strength": 4,
+  "gameText": "Of the Federation's many research departments, the Archaeology Council is among those most limited by the Prime Directive.",
+  "abilities": []
+}

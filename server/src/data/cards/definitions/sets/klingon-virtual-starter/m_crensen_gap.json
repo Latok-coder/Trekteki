@@ -1,0 +1,29 @@
+{
+  "id": "M-CRENSEN-GAP",
+  "title": "Crensen Gap",
+  "subtitle": "Protect the Escapees",
+  "type": "mission",
+  "missionType": "space",
+  "set": "klingon-virtual-starter",
+  "unique": true,
+  "span": 3,
+  "points": 30,
+  "quadrant": "A",
+  "affiliations": [
+    "klingon",
+    "federation"
+  ],
+  "requirements": "Engineer, Honor, Navigation, and Integrity>25",
+  "gameText": "Your Klingon personnel may attempt this mission, replacing its requirements during that attempt with Leadership, Officer, Treachery, and Strength>30.",
+  "abilities": [
+    {
+      "id": "crensen-alt",
+      "type": "continuous",
+      "effect": {
+        "type": "alternate_requirements",
+        "affiliation": "klingon",
+        "requirements": "Leadership, Officer, Treachery, and Strength>30"
+      }
+    }
+  ]
+}

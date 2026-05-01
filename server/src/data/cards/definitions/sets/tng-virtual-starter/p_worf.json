@@ -1,0 +1,44 @@
+{
+  "id": "P-WORF",
+  "title": "Worf",
+  "subtitle": "Chief of Security",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 4,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Anthropology",
+    "Honor",
+    "Officer",
+    "Security"
+  ],
+  "skillLevels": {
+    "Honor": 2
+  },
+  "keywords": [],
+  "integrity": 8,
+  "cunning": 5,
+  "strength": 8,
+  "gameText": "When your Federation personnel present is about to be stopped by a dilemma, you may discard a card from hand to make this personnel stopped instead.",
+  "abilities": [
+    {
+      "id": "worf-swap",
+      "type": "response",
+      "trigger": "before_fed_personnel_stopped",
+      "optional": true,
+      "cost": {
+        "type": "discard_from_hand",
+        "count": 1
+      },
+      "effect": {
+        "type": "stop_self_instead"
+      }
+    }
+  ]
+}

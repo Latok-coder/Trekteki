@@ -1,0 +1,60 @@
+{
+  "id": "P-BEVERLY-CRUSHER",
+  "title": "Beverly Crusher",
+  "subtitle": "Encouraging Commander",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 3,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Biology",
+    "Leadership",
+    "Medical",
+    "Officer"
+  ],
+  "skillLevels": {
+    "Medical": 2
+  },
+  "keywords": [
+    "Commander: U.S.S. Enterprise-D"
+  ],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 4,
+  "gameText": "Commander: U.S.S. Enterprise-D. While this personnel is aboard your U.S.S. Enterprise-D, each of your non-unique Federation personnel present is attributes +1.",
+  "abilities": [
+    {
+      "id": "bc-keyword",
+      "type": "keyword",
+      "keyword": "Commander",
+      "linkedCard": "U.S.S. Enterprise-D"
+    },
+    {
+      "id": "bc-buff",
+      "type": "continuous",
+      "condition": {
+        "type": "aboard_ship",
+        "ship": "U.S.S. Enterprise-D"
+      },
+      "effect": {
+        "type": "attribute_modifier",
+        "filter": {
+          "affiliation": "federation",
+          "unique": false,
+          "present": true
+        },
+        "modifier": {
+          "integrity": 1,
+          "cunning": 1,
+          "strength": 1
+        }
+      }
+    }
+  ]
+}

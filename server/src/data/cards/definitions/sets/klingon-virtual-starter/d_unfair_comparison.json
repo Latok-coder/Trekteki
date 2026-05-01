@@ -1,0 +1,27 @@
+{
+  "id": "D-UNFAIR-COMPARISON",
+  "title": "Unfair Comparison",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 2,
+  "unique": false,
+  "gameText": "You and your opponent each reveal the top three dilemmas of your dilemma piles. Unless you revealed dilemmas that have an equal or greater total cost than your opponent, randomly select three personnel to be stopped.",
+  "abilities": [
+    {
+      "id": "uc-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "reveal_compare_dilemma_costs",
+          "count": 3,
+          "on_fail": {
+            "type": "random_stop",
+            "count": 3
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

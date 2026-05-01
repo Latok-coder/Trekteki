@@ -1,0 +1,45 @@
+{
+  "id": "P-MILES-OBRIEN",
+  "title": "Miles O'Brien",
+  "subtitle": "Conn Officer",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Engineer",
+    "Honor",
+    "Navigation"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 3,
+  "strength": 3,
+  "gameText": "While this personnel is attempting a mission, add the span of that mission to this personnel's attributes.",
+  "abilities": [
+    {
+      "id": "obrien-span",
+      "type": "continuous",
+      "condition": {
+        "type": "attempting_mission"
+      },
+      "effect": {
+        "type": "attribute_modifier",
+        "subject": "self",
+        "modifier": {
+          "cunning": "span",
+          "integrity": "span",
+          "strength": "span"
+        }
+      }
+    }
+  ]
+}

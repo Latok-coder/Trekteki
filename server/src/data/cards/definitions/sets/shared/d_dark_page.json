@@ -1,0 +1,37 @@
+{
+  "id": "D-DARK-PAGE",
+  "title": "Dark Page",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Choose a personnel who has Anthropology or Exobiology to be stopped. If you cannot, randomly select a personnel to be killed.",
+  "abilities": [
+    {
+      "id": "dp-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "choose_to_stop",
+          "filter": {
+            "type": "or",
+            "filters": [
+              {
+                "skill": "Anthropology"
+              },
+              {
+                "skill": "Exobiology"
+              }
+            ]
+          },
+          "fallback": {
+            "type": "random_kill",
+            "count": 1
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "P-KERLA",
+  "title": "Kerla",
+  "subtitle": "Military Advisor",
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 3,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Diplomacy",
+    "Officer",
+    "Security"
+  ],
+  "skillLevels": {},
+  "keywords": [
+    "General"
+  ],
+  "integrity": 5,
+  "cunning": 5,
+  "strength": 7,
+  "gameText": "General. When you win an engagement involving this personnel, you may place him on the bottom of his owner's deck to choose one of your non-headquarters missions. The player on your left places the top card of his or her dilemma pile beneath that mission.",
+  "abilities": [
+    {
+      "id": "kerla-win",
+      "type": "response",
+      "trigger": "win_engagement",
+      "optional": true,
+      "cost": {
+        "type": "deck_bottom_self"
+      },
+      "effect": {
+        "type": "place_opponent_dilemma_under_mission"
+      }
+    }
+  ]
+}

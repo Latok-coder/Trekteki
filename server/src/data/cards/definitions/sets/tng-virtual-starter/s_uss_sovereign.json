@@ -1,0 +1,23 @@
+{
+  "id": "S-USS-SOVEREIGN",
+  "title": "U.S.S. Sovereign",
+  "subtitle": null,
+  "type": "ship",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 6,
+  "unique": false,
+  "shipClass": "Sovereign Class",
+  "icons": [],
+  "staffingRequirements": [
+    "command",
+    "staff",
+    "staff",
+    "staff"
+  ],
+  "range": 9,
+  "weapons": 9,
+  "shields": 9,
+  "gameText": "One of several Starfleet designs introduced in the 2370s, Sovereign-class starships would become the Federation's primary deep-space exploration vessel.",
+  "abilities": []
+}

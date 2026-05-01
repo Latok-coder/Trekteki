@@ -1,0 +1,27 @@
+{
+  "id": "P-RIXX",
+  "title": "Rixx",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 1,
+  "unique": false,
+  "species": "Bolian",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Leadership",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 5,
+  "gameText": "Relatively new members of the Federation, the Bolians have quickly distinguished themselves in all branches of Starfleet service.",
+  "abilities": []
+}

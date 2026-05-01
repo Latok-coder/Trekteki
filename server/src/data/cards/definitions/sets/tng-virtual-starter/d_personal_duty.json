@@ -1,0 +1,58 @@
+{
+  "id": "D-PERSONAL-DUTY",
+  "title": "Personal Duty",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "tng-virtual-starter",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Unless you have Leadership or Officer, all your personnel are stopped. If you have two or more personnel who have Leadership or Officer, randomly select all but one of those personnel to be stopped.",
+  "keywords": [
+    "XV"
+  ],
+  "abilities": [
+    {
+      "id": "pd-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skill": "Leadership"
+              },
+              {
+                "skill": "Officer"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stop_all"
+            }
+          ]
+        },
+        {
+          "type": "if_two_or_more",
+          "filter": {
+            "type": "or",
+            "filters": [
+              {
+                "skill": "Leadership"
+              },
+              {
+                "skill": "Officer"
+              }
+            ]
+          },
+          "effect": {
+            "type": "random_stop_all_but_one"
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "M-CARDASSIA-IV",
+  "title": "Cardassia IV",
+  "subtitle": "Rescue Prisoners",
+  "type": "mission",
+  "missionType": "planet",
+  "set": "klingon-virtual-starter",
+  "unique": true,
+  "span": 1,
+  "points": 30,
+  "quadrant": "A",
+  "affiliations": [
+    "klingon",
+    "federation",
+    "bajoran"
+  ],
+  "region": "Cardassia System",
+  "requirements": "Leadership, Security, Transporters, and Strength>30",
+  "gameText": "Region: Cardassia System. When you complete this mission, you may take one of your personnel from an opponent's brig and place him or her on your headquarters mission.",
+  "abilities": [
+    {
+      "id": "card4-rescue",
+      "type": "response",
+      "trigger": "on_mission_complete",
+      "optional": true,
+      "effect": {
+        "type": "rescue_from_brig_to_hq"
+      }
+    }
+  ]
+}

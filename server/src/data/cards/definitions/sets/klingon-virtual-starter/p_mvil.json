@@ -1,0 +1,41 @@
+{
+  "id": "P-MVIL",
+  "title": "M'vil",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 3,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Archaeology",
+    "Astrometrics",
+    "Biology",
+    "Medical"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 5,
+  "strength": 6,
+  "gameText": "When you play this personnel, you may destroy an opponent's event. That opponent may place two cards from hand on top of his or her deck in any order to prevent this.",
+  "abilities": [
+    {
+      "id": "mvil-destroy",
+      "type": "response",
+      "trigger": "on_play",
+      "optional": true,
+      "effect": {
+        "type": "destroy_opponent_event",
+        "preventable": {
+          "type": "place_from_hand",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "P-TVIS",
+  "title": "T'vis",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 2,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Diplomacy",
+    "Honor",
+    "Law",
+    "Security"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 7,
+  "gameText": "Most Klingons inducted into the Order of the Bat'leth spend much of their lives focused only on reaching that goal.",
+  "abilities": []
+}

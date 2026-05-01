@@ -1,0 +1,44 @@
+{
+  "id": "P-DEANNA-TROI",
+  "title": "Deanna Troi",
+  "subtitle": "Durango",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": true,
+  "species": "Betazoid/Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Anthropology",
+    "Honor",
+    "Security",
+    "Telepathy"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 4,
+  "gameText": "When an opponent plays a Security personnel or places a Security personnel from hand on a headquarters mission, you may discard two cards from hand to stop that personnel.",
+  "abilities": [
+    {
+      "id": "troi-counter",
+      "type": "response",
+      "trigger": "opponent_plays_security",
+      "optional": true,
+      "cost": {
+        "type": "discard_from_hand",
+        "count": 2
+      },
+      "effect": {
+        "type": "stop_personnel",
+        "subject": "trigger_personnel"
+      },
+      "timing": "can_play_on_opponent_turn"
+    }
+  ]
+}

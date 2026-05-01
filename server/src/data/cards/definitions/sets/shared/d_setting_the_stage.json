@@ -1,0 +1,26 @@
+{
+  "id": "D-SETTING-THE-STAGE",
+  "title": "Setting the Stage",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Randomly select nine personnel. All your other personnel are stopped and this dilemma returns to its owner's dilemma pile.",
+  "abilities": [
+    {
+      "id": "sts-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "random_select",
+          "count": 9
+        },
+        {
+          "type": "stop_others"
+        }
+      ],
+      "placement": "dilemma_pile"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "S-USS-EXCELSIOR",
+  "title": "U.S.S. Excelsior",
+  "subtitle": null,
+  "type": "ship",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 4,
+  "unique": false,
+  "shipClass": "Excelsior Class",
+  "icons": [],
+  "staffingRequirements": [
+    "command",
+    "staff",
+    "staff"
+  ],
+  "range": 8,
+  "weapons": 7,
+  "shields": 7,
+  "gameText": "Although the transwarp drive experiment of the late 23rd century was a failure, the design of the ship itself was one of Starfleet's greatest successes.",
+  "abilities": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "M-MOAB-IV",
+  "title": "Moab IV",
+  "subtitle": "Avert Danger",
+  "type": "mission",
+  "missionType": "planet",
+  "set": "tng-virtual-starter",
+  "unique": true,
+  "span": 2,
+  "points": 30,
+  "quadrant": "A",
+  "affiliations": [
+    "federation",
+    "bajoran",
+    "klingon",
+    "romulan"
+  ],
+  "requirements": "Astrometrics, Physics, Science, and Cunning>32",
+  "gameText": "When you complete this mission, if your personnel completing it have 2 Physics or 2 Science, score 5 points.",
+  "abilities": [
+    {
+      "id": "moab-bonus",
+      "type": "response",
+      "trigger": "on_mission_complete",
+      "optional": true,
+      "condition": {
+        "type": "or",
+        "conditions": [
+          {
+            "skill_count": {
+              "skill": "Physics",
+              "count": 2
+            }
+          },
+          {
+            "skill_count": {
+              "skill": "Science",
+              "count": 2
+            }
+          }
+        ]
+      },
+      "effect": {
+        "type": "score_points",
+        "amount": 5
+      }
+    }
+  ]
+}

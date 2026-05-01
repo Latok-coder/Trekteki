@@ -1,0 +1,28 @@
+{
+  "id": "P-MERAHT",
+  "title": "Meraht",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 2,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Anthropology",
+    "Exobiology",
+    "Honor",
+    "Intelligence",
+    "Transporters"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 6,
+  "gameText": "Operative based on Deep Space 9, assigned to monitor alien civilizations bordering the Klingon Empire.",
+  "abilities": []
+}

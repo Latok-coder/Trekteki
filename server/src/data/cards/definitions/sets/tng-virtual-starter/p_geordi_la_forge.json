@@ -1,0 +1,40 @@
+{
+  "id": "P-GEORDI-LA-FORGE",
+  "title": "Geordi La Forge",
+  "subtitle": "Battleship Engineer",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 4,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Engineer",
+    "Honor",
+    "Physics",
+    "Programming",
+    "Science"
+  ],
+  "skillLevels": {
+    "Engineer": 2
+  },
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 5,
+  "gameText": "Order - If this personnel is present with your personnel who has a cost of 4 or more and he is aboard your Federation ship, return him to his owner's hand to place that ship at your mission.",
+  "abilities": [
+    {
+      "id": "geordi-order",
+      "type": "order_action",
+      "effect": {
+        "type": "complex_ship_recall"
+      }
+    }
+  ]
+}

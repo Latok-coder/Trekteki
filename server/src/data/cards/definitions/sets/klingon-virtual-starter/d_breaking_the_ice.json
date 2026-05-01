@@ -1,0 +1,45 @@
+{
+  "id": "D-BREAKING-THE-ICE",
+  "title": "Breaking the Ice",
+  "type": "dilemma",
+  "dilemmaType": "planet",
+  "set": "klingon-virtual-starter",
+  "cost": 3,
+  "unique": false,
+  "gameText": "Persistent. (When your personnel complete this mission, this dilemma's owner may discard a non-personnel card from hand to return this dilemma to his or her dilemma pile.) Unless you have 3 Geology or two non-Hand Weapon equipment, all your personnel are stopped.",
+  "keywords": [
+    "Persistent"
+  ],
+  "abilities": [
+    {
+      "id": "bti-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skill_count": {
+                  "skill": "Geology",
+                  "count": 3
+                }
+              },
+              {
+                "equipment_count": 2,
+                "not_keyword": "Hand Weapon"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stop_all"
+            }
+          ]
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

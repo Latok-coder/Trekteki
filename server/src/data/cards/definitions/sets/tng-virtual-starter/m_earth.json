@@ -1,0 +1,41 @@
+{
+  "id": "M-EARTH",
+  "title": "Earth",
+  "subtitle": "Cradle of the Federation",
+  "type": "mission",
+  "missionType": "headquarters",
+  "set": "tng-virtual-starter",
+  "unique": true,
+  "affiliation": "federation",
+  "quadrant": "A",
+  "region": "Sector 001",
+  "span": 2,
+  "points": null,
+  "gameText": "You may play Federation cards, Bajoran cards, Maquis cards, and equipment at this mission.",
+  "abilities": [
+    {
+      "id": "earth-play",
+      "type": "continuous",
+      "effect": {
+        "type": "allow_play_at_mission",
+        "filter": {
+          "type": "or",
+          "filters": [
+            {
+              "affiliation": "federation"
+            },
+            {
+              "affiliation": "bajoran"
+            },
+            {
+              "affiliation": "maquis"
+            },
+            {
+              "type": "equipment"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "P-WILLIAM-RIKER",
+  "title": "William T. Riker",
+  "subtitle": "William Odan",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Diplomacy",
+    "Honor",
+    "Navigation",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [
+    "Host"
+  ],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "Host. When your Federation personnel present is killed by a dilemma, you may discard a card from hand to make this personnel gain a skill from the killed personnel until the end of this mission attempt.",
+  "abilities": [
+    {
+      "id": "riker-host",
+      "type": "response",
+      "trigger": "fed_personnel_killed_by_dilemma",
+      "optional": true,
+      "cost": {
+        "type": "discard_from_hand",
+        "count": 1
+      },
+      "effect": {
+        "type": "skill_gain_from_killed",
+        "duration": "mission_attempt"
+      }
+    }
+  ]
+}

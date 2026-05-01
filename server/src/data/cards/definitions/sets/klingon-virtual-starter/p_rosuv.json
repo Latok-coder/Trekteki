@@ -1,0 +1,41 @@
+{
+  "id": "P-ROSUV",
+  "title": "Ro'suv",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 3,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Biology",
+    "Honor",
+    "Medical",
+    "Physics",
+    "Transporters"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 7,
+  "cunning": 5,
+  "strength": 7,
+  "gameText": "When you play this personnel, if you command two Klingon personnel, this personnel is cost -1.",
+  "abilities": [
+    {
+      "id": "rosuv-discount",
+      "type": "cost_modifier",
+      "condition": {
+        "type": "you_command",
+        "filter": {
+          "affiliation": "klingon"
+        },
+        "count": 2
+      },
+      "amount": -1
+    }
+  ]
+}

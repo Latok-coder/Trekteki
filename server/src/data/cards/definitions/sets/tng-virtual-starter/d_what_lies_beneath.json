@@ -1,0 +1,54 @@
+{
+  "id": "D-WHAT-LIES-BENEATH",
+  "title": "What Lies Beneath",
+  "type": "dilemma",
+  "dilemmaType": "space",
+  "set": "tng-virtual-starter",
+  "cost": 3,
+  "unique": false,
+  "gameText": "Unless you have Archaeology, Geology, and Honor or Anthropology, Treachery, and Cunning>32, randomly select a personnel to be placed on the bottom of his or her owner's deck and all your personnel are stopped.",
+  "abilities": [
+    {
+      "id": "wlb-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skills": [
+                  "Archaeology",
+                  "Geology",
+                  "Honor"
+                ]
+              },
+              {
+                "skills": [
+                  "Anthropology",
+                  "Treachery"
+                ],
+                "attributes": {
+                  "cunning": {
+                    "gt": 32
+                  }
+                }
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "random_deck_bottom",
+              "count": 1
+            },
+            {
+              "type": "stop_all"
+            }
+          ]
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

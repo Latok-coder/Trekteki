@@ -1,0 +1,32 @@
+{
+  "id": "S-IKS-VORCHA",
+  "title": "I.K.S. Vor'cha",
+  "subtitle": null,
+  "type": "ship",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 5,
+  "unique": false,
+  "shipClass": "Vor'cha Class",
+  "icons": [],
+  "staffingRequirements": [
+    "command",
+    "staff",
+    "staff",
+    "staff"
+  ],
+  "range": 8,
+  "weapons": 9,
+  "shields": 8,
+  "keywords": [
+    "Cloaking Device"
+  ],
+  "gameText": "Cloaking Device.",
+  "abilities": [
+    {
+      "id": "vorcha-cloak",
+      "type": "keyword",
+      "keyword": "Cloaking Device"
+    }
+  ]
+}

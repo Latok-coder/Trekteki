@@ -1,0 +1,41 @@
+{
+  "id": "D-FAMILY",
+  "title": "Family",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 3,
+  "unique": false,
+  "gameText": "Randomly select a personnel to be stopped. Unless you reveal an Honor personnel from your hand or reveal a Treachery personnel from your hand, place that personnel on the bottom of his or her owner's deck instead.",
+  "abilities": [
+    {
+      "id": "fam-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "random_stop",
+          "count": 1
+        },
+        {
+          "type": "conditional_deck_bottom",
+          "condition": {
+            "type": "reveal_from_hand",
+            "filter": {
+              "type": "or",
+              "filters": [
+                {
+                  "skill": "Honor"
+                },
+                {
+                  "skill": "Treachery"
+                }
+              ]
+            }
+          },
+          "subject": "stopped_personnel"
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+[
+  {
+    "id": "D-BREAKING-THE-ICE",
+    "title": "Breaking the Ice",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_breaking_the_ice.json"
+  },
+  {
+    "id": "D-HEALING-HAND",
+    "title": "Healing Hand",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_healing_hand.json"
+  },
+  {
+    "id": "D-INFINITE-DIVERSITY",
+    "title": "Infinite Diversity",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_infinite_diversity.json"
+  },
+  {
+    "id": "D-PERSISTENT-STRIKE",
+    "title": "Persistent Strike",
+    "subtitle": null,
+    "type": "event",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_persistent_strike.json"
+  },
+  {
+    "id": "D-SHOW-TRIAL",
+    "title": "Show Trial",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_show_trial.json"
+  },
+  {
+    "id": "D-SLIGHTLY-OVERBOOKED",
+    "title": "Slightly Overbooked",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_slightly_overbooked.json"
+  },
+  {
+    "id": "D-SPATIAL-INTERPHASE",
+    "title": "Spatial Interphase",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_spatial_interphase.json"
+  },
+  {
+    "id": "D-UNFAIR-COMPARISON",
+    "title": "Unfair Comparison",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_unfair_comparison.json"
+  },
+  {
+    "id": "D-UNFAIR-TERMS",
+    "title": "Unfair Terms",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/d_unfair_terms.json"
+  },
+  {
+    "id": "M-CARDASSIA-IV",
+    "title": "Cardassia IV",
+    "subtitle": "Rescue Prisoners",
+    "type": "mission",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/m_cardassia_iv.json"
+  },
+  {
+    "id": "M-CRENSEN-GAP",
+    "title": "Crensen Gap",
+    "subtitle": "Protect the Escapees",
+    "type": "mission",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/m_crensen_gap.json"
+  },
+  {
+    "id": "M-HONOR-THE-FALLEN",
+    "title": "Honor the Fallen",
+    "subtitle": null,
+    "type": "mission",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/m_honor_the_fallen.json"
+  },
+  {
+    "id": "M-QONOS",
+    "title": "Qo'noS",
+    "subtitle": "Heart of the Empire",
+    "type": "mission",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/m_qonos.json"
+  },
+  {
+    "id": "M-VALT-MINOR",
+    "title": "Valt Minor",
+    "subtitle": "Brute Force",
+    "type": "mission",
+    "set": "klingon-virtual-starter",
+    "affiliation": null,
+    "file": "sets/klingon-virtual-starter/m_valt_minor.json"
+  },
+  {
+    "id": "P-AZETBUR",
+    "title": "Azetbur",
+    "subtitle": "Visionary Chancellor",
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_azetbur.json"
+  },
+  {
+    "id": "P-BREGATH",
+    "title": "Bregath",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_bregath.json"
+  },
+  {
+    "id": "P-DOKAR",
+    "title": "Dokar",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_dokar.json"
+  },
+  {
+    "id": "P-KAHMIS",
+    "title": "Kahmis",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_kahmis.json"
+  },
+  {
+    "id": "P-KERLA",
+    "title": "Kerla",
+    "subtitle": "Military Advisor",
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_kerla.json"
+  },
+  {
+    "id": "P-KHOS",
+    "title": "Khos",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_khos.json"
+  },
+  {
+    "id": "P-KLAG",
+    "title": "Klag",
+    "subtitle": "Second Officer",
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_klag.json"
+  },
+  {
+    "id": "P-KMPEC",
+    "title": "K'mpec",
+    "subtitle": "Protector of the Empire",
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_kmpec.json"
+  },
+  {
+    "id": "P-KOHLAR",
+    "title": "Kohlar",
+    "subtitle": "Pilgrim Commander",
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_kohlar.json"
+  },
+  {
+    "id": "P-MERAHT",
+    "title": "Meraht",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_meraht.json"
+  },
+  {
+    "id": "P-MVIL",
+    "title": "M'vil",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_mvil.json"
+  },
+  {
+    "id": "P-ROSUV",
+    "title": "Ro'suv",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_rosuv.json"
+  },
+  {
+    "id": "P-TVIS",
+    "title": "T'vis",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_tvis.json"
+  },
+  {
+    "id": "P-VORAX",
+    "title": "Vorax",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/p_vorax.json"
+  },
+  {
+    "id": "S-IKS-KVORT",
+    "title": "I.K.S. K'Vort",
+    "subtitle": null,
+    "type": "ship",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/s_iks_kvort.json"
+  },
+  {
+    "id": "S-IKS-VORCHA",
+    "title": "I.K.S. Vor'cha",
+    "subtitle": null,
+    "type": "ship",
+    "set": "klingon-virtual-starter",
+    "affiliation": "klingon",
+    "file": "sets/klingon-virtual-starter/s_iks_vorcha.json"
+  },
+  {
+    "id": "D-DARK-PAGE",
+    "title": "Dark Page",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_dark_page.json"
+  },
+  {
+    "id": "D-FAMILY",
+    "title": "Family",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_family.json"
+  },
+  {
+    "id": "D-FERENGI-LOCATOR-BOMB",
+    "title": "Ferengi Locator Bomb",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_ferengi_locator_bomb.json"
+  },
+  {
+    "id": "D-HONORABLE-PURSUIT",
+    "title": "Honorable Pursuit",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_honorable_pursuit.json"
+  },
+  {
+    "id": "D-MARK-OF-GIDEON",
+    "title": "Mark of Gideon",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_mark_of_gideon.json"
+  },
+  {
+    "id": "D-ONE-STEP-AHEAD",
+    "title": "One Step Ahead",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_one_step_ahead.json"
+  },
+  {
+    "id": "D-PILLAGE-AND-PLUNDER",
+    "title": "Pillage and Plunder",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_pillage_and_plunder.json"
+  },
+  {
+    "id": "D-SETTING-THE-STAGE",
+    "title": "Setting the Stage",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_setting_the_stage.json"
+  },
+  {
+    "id": "D-THE-FIRST-DUTY",
+    "title": "The First Duty",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_the_first_duty.json"
+  },
+  {
+    "id": "D-THE-LAUNCHING",
+    "title": "The Launching",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_the_launching.json"
+  },
+  {
+    "id": "D-TIMESCAPE",
+    "title": "Timescape",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_timescape.json"
+  },
+  {
+    "id": "D-UNEXPECTED-DIFFICULTIES",
+    "title": "Unexpected Difficulties",
+    "subtitle": null,
+    "type": "event",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/d_unexpected_difficulties.json"
+  },
+  {
+    "id": "I-ESCAPE",
+    "title": "Escape",
+    "subtitle": null,
+    "type": "interrupt",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/i_escape.json"
+  },
+  {
+    "id": "I-UNINVITED",
+    "title": "Uninvited",
+    "subtitle": null,
+    "type": "interrupt",
+    "set": "shared",
+    "affiliation": null,
+    "file": "sets/shared/i_uninvited.json"
+  },
+  {
+    "id": "D-AGONIZING-ENCOUNTER",
+    "title": "Agonizing Encounter",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/d_agonizing_encounter.json"
+  },
+  {
+    "id": "D-CLOWN-BITTER-MEDICINE",
+    "title": "The Clown: Bitter Medicine",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/d_clown_bitter_medicine.json"
+  },
+  {
+    "id": "D-INTIMIDATION",
+    "title": "Intimidation",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/d_intimidation.json"
+  },
+  {
+    "id": "D-PERSONAL-DUTY",
+    "title": "Personal Duty",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/d_personal_duty.json"
+  },
+  {
+    "id": "D-WHAT-LIES-BENEATH",
+    "title": "What Lies Beneath",
+    "subtitle": null,
+    "type": "dilemma",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/d_what_lies_beneath.json"
+  },
+  {
+    "id": "E-ALWAYS-WELCOME",
+    "title": "Always Welcome",
+    "subtitle": null,
+    "type": "event",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/e_always_welcome.json"
+  },
+  {
+    "id": "M-EARTH",
+    "title": "Earth",
+    "subtitle": "Cradle of the Federation",
+    "type": "mission",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/m_earth.json"
+  },
+  {
+    "id": "M-FORCAS-SECTOR",
+    "title": "Forcas Sector",
+    "subtitle": "Fissure Research",
+    "type": "mission",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/m_forcas_sector.json"
+  },
+  {
+    "id": "M-LAPIDEAS-SYSTEM",
+    "title": "Lapideas System",
+    "subtitle": "Geological Survey",
+    "type": "mission",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/m_lapideas_system.json"
+  },
+  {
+    "id": "M-MOAB-IV",
+    "title": "Moab IV",
+    "subtitle": "Avert Danger",
+    "type": "mission",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/m_moab_iv.json"
+  },
+  {
+    "id": "M-SECTOR-97",
+    "title": "Sector 97",
+    "subtitle": "Explore Black Cluster",
+    "type": "mission",
+    "set": "tng-virtual-starter",
+    "affiliation": null,
+    "file": "sets/tng-virtual-starter/m_sector_97.json"
+  },
+  {
+    "id": "P-BEVERLY-CRUSHER",
+    "title": "Beverly Crusher",
+    "subtitle": "Encouraging Commander",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_beverly_crusher.json"
+  },
+  {
+    "id": "P-DANIEL-KWAN",
+    "title": "Daniel Kwan",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_daniel_kwan.json"
+  },
+  {
+    "id": "P-DATA",
+    "title": "Data",
+    "subtitle": "Proud Father",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_data.json"
+  },
+  {
+    "id": "P-DAVIES",
+    "title": "Davies",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_davies.json"
+  },
+  {
+    "id": "P-DEANNA-TROI",
+    "title": "Deanna Troi",
+    "subtitle": "Durango",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_deanna_troi.json"
+  },
+  {
+    "id": "P-DELVOK",
+    "title": "Delvok",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_delvok.json"
+  },
+  {
+    "id": "P-GEORDI-LA-FORGE",
+    "title": "Geordi La Forge",
+    "subtitle": "Battleship Engineer",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_geordi_la_forge.json"
+  },
+  {
+    "id": "P-JEAN-LUC-PICARD",
+    "title": "Jean-Luc Picard",
+    "subtitle": "Genial Captain",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_jean_luc_picard.json"
+  },
+  {
+    "id": "P-MILES-OBRIEN",
+    "title": "Miles O'Brien",
+    "subtitle": "Conn Officer",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_miles_obrien.json"
+  },
+  {
+    "id": "P-ORFIL-QUINTEROS",
+    "title": "Orfil Quinteros",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_orfil_quinteros.json"
+  },
+  {
+    "id": "P-RABAL",
+    "title": "Rabal",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_rabal.json"
+  },
+  {
+    "id": "P-RIXX",
+    "title": "Rixx",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_rixx.json"
+  },
+  {
+    "id": "P-RO-LAREN",
+    "title": "Ro Laren",
+    "subtitle": "Headstrong Ensign",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_ro_laren.json"
+  },
+  {
+    "id": "P-ROBIN-LEFLER",
+    "title": "Robin Lefler",
+    "subtitle": "Pragmatic Specialist",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_robin_lefler.json"
+  },
+  {
+    "id": "P-TASHA-YAR",
+    "title": "Tasha Yar",
+    "subtitle": "Weapons Specialist",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_tasha_yar.json"
+  },
+  {
+    "id": "P-VAN-ORTON",
+    "title": "Van Orton",
+    "subtitle": null,
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_van_orton.json"
+  },
+  {
+    "id": "P-WESLEY-CRUSHER",
+    "title": "Wesley Crusher",
+    "subtitle": "Apprentice Traveler",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_wesley_crusher.json"
+  },
+  {
+    "id": "P-WILLIAM-RIKER",
+    "title": "William T. Riker",
+    "subtitle": "William Odan",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_william_riker.json"
+  },
+  {
+    "id": "P-WORF",
+    "title": "Worf",
+    "subtitle": "Chief of Security",
+    "type": "personnel",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/p_worf.json"
+  },
+  {
+    "id": "S-USS-ENTERPRISE-D",
+    "title": "U.S.S. Enterprise-D",
+    "subtitle": "Diplomatic Envoy",
+    "type": "ship",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/s_uss_enterprise_d.json"
+  },
+  {
+    "id": "S-USS-EXCELSIOR",
+    "title": "U.S.S. Excelsior",
+    "subtitle": null,
+    "type": "ship",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/s_uss_excelsior.json"
+  },
+  {
+    "id": "S-USS-SOVEREIGN",
+    "title": "U.S.S. Sovereign",
+    "subtitle": null,
+    "type": "ship",
+    "set": "tng-virtual-starter",
+    "affiliation": "federation",
+    "file": "sets/tng-virtual-starter/s_uss_sovereign.json"
+  }
+]

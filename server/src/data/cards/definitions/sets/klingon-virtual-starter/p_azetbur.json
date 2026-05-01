@@ -1,0 +1,52 @@
+{
+  "id": "P-AZETBUR",
+  "title": "Azetbur",
+  "subtitle": "Visionary Chancellor",
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 4,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command"
+  ],
+  "skills": [
+    "Anthropology",
+    "Diplomacy",
+    "Exobiology",
+    "Honor",
+    "Law",
+    "Leadership"
+  ],
+  "skillLevels": {
+    "Leadership": 2
+  },
+  "keywords": [
+    "Chancellor"
+  ],
+  "integrity": 7,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "Chancellor. When this personnel uses a skill to complete a mission, you may destroy three of your Assault events and/or Maneuver events to score 10 points.",
+  "abilities": [
+    {
+      "id": "azt-score",
+      "type": "response",
+      "trigger": "uses_skill_complete_mission",
+      "optional": true,
+      "cost": {
+        "type": "destroy_events",
+        "keywords": [
+          "Assault",
+          "Maneuver"
+        ],
+        "count": 3
+      },
+      "effect": {
+        "type": "score_points",
+        "amount": 10
+      }
+    }
+  ]
+}

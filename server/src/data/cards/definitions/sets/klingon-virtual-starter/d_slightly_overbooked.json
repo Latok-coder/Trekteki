@@ -1,0 +1,43 @@
+{
+  "id": "D-SLIGHTLY-OVERBOOKED",
+  "title": "Slightly Overbooked",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 6,
+  "unique": false,
+  "gameText": "For each mission worth 40 or more points that your opponent commands, this dilemma is cost -2. Unless you have three personnel who each have a cost of 4 or more, each of your personnel who has a cost of 2 or less is stopped.",
+  "abilities": [
+    {
+      "id": "sob-main",
+      "type": "dilemma_effect",
+      "cost_modifier": {
+        "per_opponent_40pt_mission": -2
+      },
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "filter": {
+              "cost": {
+                "gte": 4
+              }
+            },
+            "count": 3
+          },
+          "effects": [
+            {
+              "type": "stop_filter",
+              "filter": {
+                "cost": {
+                  "lte": 2
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

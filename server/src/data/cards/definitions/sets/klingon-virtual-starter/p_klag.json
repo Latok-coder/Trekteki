@@ -1,0 +1,54 @@
+{
+  "id": "P-KLAG",
+  "title": "Klag",
+  "subtitle": "Second Officer",
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 3,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command"
+  ],
+  "skills": [
+    "Diplomacy",
+    "Honor",
+    "Navigation",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 7,
+  "gameText": "While this personnel is facing a dilemma that requires Honor or Officer, he and each Honor personnel present cannot be randomly selected by that dilemma.",
+  "abilities": [
+    {
+      "id": "klag-protect",
+      "type": "continuous",
+      "condition": {
+        "type": "facing_dilemma_requiring",
+        "skills": [
+          "Honor",
+          "Officer"
+        ]
+      },
+      "effect": {
+        "type": "cannot_be_randomly_selected",
+        "filter": {
+          "type": "or",
+          "filters": [
+            {
+              "subject": "self"
+            },
+            {
+              "skill": "Honor",
+              "present": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "D-SHOW-TRIAL",
+  "title": "Show Trial",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Randomly select a personnel who has Leadership or Medical to be stopped. If you have more points than each of your opponents, randomly select an additional personnel to be stopped.",
+  "abilities": [
+    {
+      "id": "st-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "random_stop",
+          "filter": {
+            "type": "or",
+            "filters": [
+              {
+                "skill": "Leadership"
+              },
+              {
+                "skill": "Medical"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "type": "conditional_extra_stop",
+          "condition": {
+            "type": "you_have_most_points"
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

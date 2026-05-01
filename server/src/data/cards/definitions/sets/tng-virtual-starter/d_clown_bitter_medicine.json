@@ -1,0 +1,37 @@
+{
+  "id": "D-CLOWN-BITTER-MEDICINE",
+  "title": "The Clown: Bitter Medicine",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "tng-virtual-starter",
+  "cost": 4,
+  "unique": false,
+  "gameText": "Place this dilemma on this mission. Your opponent names a skill. Each of your personnel who has that skill is attributes -2. At the end of this turn, this dilemma returns to its owner's dilemma pile.",
+  "keywords": [
+    "XV"
+  ],
+  "abilities": [
+    {
+      "id": "cbm-main",
+      "type": "dilemma_effect",
+      "placement": "mission",
+      "end_of_turn_return": true,
+      "actions": [
+        {
+          "type": "opponent_names_skill"
+        },
+        {
+          "type": "attribute_modifier",
+          "filter": {
+            "has_named_skill": true
+          },
+          "modifier": {
+            "integrity": -2,
+            "cunning": -2,
+            "strength": -2
+          }
+        }
+      ]
+    }
+  ]
+}

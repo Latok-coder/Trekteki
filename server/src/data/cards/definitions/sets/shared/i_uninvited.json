@@ -1,0 +1,25 @@
+{
+  "id": "I-UNINVITED",
+  "title": "Uninvited",
+  "type": "interrupt",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "Q. When personnel that the player on your right commands begin a mission attempt, search your dilemma pile for a dilemma that costs 1 or less and place that dilemma on top of your dilemma stack. Shuffle and replace your dilemma pile.",
+  "keywords": [
+    "Q"
+  ],
+  "abilities": [
+    {
+      "id": "uni-main",
+      "type": "response",
+      "trigger": "opponent_begins_mission_attempt",
+      "optional": true,
+      "effect": {
+        "type": "search_dilemma_pile_add_to_stack",
+        "max_cost": 1
+      },
+      "timing": "can_play_on_opponent_turn"
+    }
+  ]
+}

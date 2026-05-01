@@ -1,0 +1,23 @@
+{
+  "id": "D-INTIMIDATION",
+  "title": "Intimidation",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "tng-virtual-starter",
+  "cost": 4,
+  "unique": false,
+  "gameText": "Randomly select a personnel. Repeat this until you select a personnel of a different species than the first personnel that you selected. Stop each selected personnel.",
+  "abilities": [
+    {
+      "id": "intim-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "random_select_different_species_loop",
+          "effect": "stop"
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "M-FORCAS-SECTOR",
+  "title": "Forcas Sector",
+  "subtitle": "Fissure Research",
+  "type": "mission",
+  "missionType": "space",
+  "set": "tng-virtual-starter",
+  "unique": true,
+  "span": 3,
+  "points": 35,
+  "quadrant": "A",
+  "affiliations": [
+    "any"
+  ],
+  "requirements": "Astrometrics, Engineer, Physics, Science, and Cunning>36",
+  "gameText": "Any affiliation may attempt this mission.",
+  "abilities": []
+}

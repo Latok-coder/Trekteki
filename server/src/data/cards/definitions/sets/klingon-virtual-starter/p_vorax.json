@@ -1,0 +1,27 @@
+{
+  "id": "P-VORAX",
+  "title": "Vorax",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 2,
+  "unique": false,
+  "species": "Klingon",
+  "icons": [
+    "staff"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Engineer",
+    "Geology",
+    "Programming"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 7,
+  "gameText": "One of the honored few selected to crew the I.K.S. Negh'Var on its glorious maiden voyage.",
+  "abilities": []
+}

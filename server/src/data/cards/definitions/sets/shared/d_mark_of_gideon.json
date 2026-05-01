@@ -1,0 +1,22 @@
+{
+  "id": "D-MARK-OF-GIDEON",
+  "title": "Mark of Gideon",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 3,
+  "unique": false,
+  "gameText": "Randomly select a personnel to be stopped. If you still have nine personnel remaining, return that personnel to his or her owner's hand, then your opponent chooses a second personnel to return to his or her owner's hand. If you still have ten personnel remaining, your opponent chooses a third personnel to return to his or her owner's hand.",
+  "abilities": [
+    {
+      "id": "mog-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "complex_return_to_hand"
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

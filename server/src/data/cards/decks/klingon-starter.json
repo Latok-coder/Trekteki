@@ -1,0 +1,173 @@
+{
+  "formatVersion": 1,
+  "id": "klingon-starter",
+  "name": "Klingon Starter",
+  "affiliation": "klingon",
+  "missions": [
+    "M-QONOS",
+    "M-CARDASSIA-IV",
+    "M-CRENSEN-GAP",
+    "M-HONOR-THE-FALLEN",
+    "M-VALT-MINOR"
+  ],
+  "deck": [
+    {
+      "definitionId": "P-AZETBUR",
+      "count": 1
+    },
+    {
+      "definitionId": "P-BREGATH",
+      "count": 3
+    },
+    {
+      "definitionId": "P-DOKAR",
+      "count": 2
+    },
+    {
+      "definitionId": "P-KAHMIS",
+      "count": 2
+    },
+    {
+      "definitionId": "P-KERLA",
+      "count": 1
+    },
+    {
+      "definitionId": "P-KHOS",
+      "count": 2
+    },
+    {
+      "definitionId": "P-KLAG",
+      "count": 1
+    },
+    {
+      "definitionId": "P-KMPEC",
+      "count": 1
+    },
+    {
+      "definitionId": "P-KOHLAR",
+      "count": 2
+    },
+    {
+      "definitionId": "P-MERAHT",
+      "count": 2
+    },
+    {
+      "definitionId": "P-MVIL",
+      "count": 2
+    },
+    {
+      "definitionId": "P-ROSUV",
+      "count": 2
+    },
+    {
+      "definitionId": "P-TVIS",
+      "count": 3
+    },
+    {
+      "definitionId": "P-VORAX",
+      "count": 2
+    },
+    {
+      "definitionId": "S-IKS-KVORT",
+      "count": 2
+    },
+    {
+      "definitionId": "S-IKS-VORCHA",
+      "count": 2
+    },
+    {
+      "definitionId": "D-UNEXPECTED-DIFFICULTIES",
+      "count": 1
+    },
+    {
+      "definitionId": "D-PERSISTENT-STRIKE",
+      "count": 2
+    },
+    {
+      "definitionId": "I-ESCAPE",
+      "count": 1
+    },
+    {
+      "definitionId": "I-UNINVITED",
+      "count": 1
+    }
+  ],
+  "dilemmas": [
+    {
+      "definitionId": "D-BREAKING-THE-ICE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-DARK-PAGE",
+      "count": 2
+    },
+    {
+      "definitionId": "D-FAMILY",
+      "count": 1
+    },
+    {
+      "definitionId": "D-FERENGI-LOCATOR-BOMB",
+      "count": 1
+    },
+    {
+      "definitionId": "D-HEALING-HAND",
+      "count": 1
+    },
+    {
+      "definitionId": "D-HONORABLE-PURSUIT",
+      "count": 1
+    },
+    {
+      "definitionId": "D-INFINITE-DIVERSITY",
+      "count": 1
+    },
+    {
+      "definitionId": "D-MARK-OF-GIDEON",
+      "count": 1
+    },
+    {
+      "definitionId": "D-ONE-STEP-AHEAD",
+      "count": 1
+    },
+    {
+      "definitionId": "D-PILLAGE-AND-PLUNDER",
+      "count": 1
+    },
+    {
+      "definitionId": "D-PERSISTENT-STRIKE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-SETTING-THE-STAGE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-SHOW-TRIAL",
+      "count": 1
+    },
+    {
+      "definitionId": "D-SLIGHTLY-OVERBOOKED",
+      "count": 1
+    },
+    {
+      "definitionId": "D-SPATIAL-INTERPHASE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-THE-FIRST-DUTY",
+      "count": 2
+    },
+    {
+      "definitionId": "D-THE-LAUNCHING",
+      "count": 2
+    },
+    {
+      "definitionId": "D-TIMESCAPE",
+      "count": 1
+    },
+    {
+      "definitionId": "D-UNFAIR-COMPARISON",
+      "count": 1
+    }
+  ]
+}

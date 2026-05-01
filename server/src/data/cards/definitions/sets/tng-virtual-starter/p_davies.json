@@ -1,0 +1,27 @@
+{
+  "id": "P-DAVIES",
+  "title": "Davies",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 1,
+  "unique": false,
+  "species": "Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Geology",
+    "Physics",
+    "Science"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 5,
+  "cunning": 6,
+  "strength": 5,
+  "gameText": "A partially empathic species, Napeans typically seek interaction with other races to explore alien thought patterns. This leads many to join Starfleet.",
+  "abilities": []
+}

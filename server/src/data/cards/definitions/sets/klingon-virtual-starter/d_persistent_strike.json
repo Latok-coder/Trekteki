@@ -1,0 +1,31 @@
+{
+  "id": "D-PERSISTENT-STRIKE",
+  "title": "Persistent Strike",
+  "type": "event",
+  "set": "klingon-virtual-starter",
+  "cost": 3,
+  "unique": false,
+  "keywords": [
+    "Maneuver"
+  ],
+  "gameText": "Maneuver. Plays in your core. Order - Begin an engagement involving your Officer personnel. If you win, place this event on an opponent's ship involved. Otherwise, destroy this event. Damage - If this is a non-Klingon ship, ignore its game text.",
+  "abilities": [
+    {
+      "id": "ps-order",
+      "type": "order_action",
+      "effect": {
+        "type": "begin_engagement",
+        "requirement": {
+          "skill": "Officer"
+        },
+        "on_win": {
+          "type": "damage_card",
+          "target": "opponent_ship"
+        },
+        "on_loss": {
+          "type": "destroy_self"
+        }
+      }
+    }
+  ]
+}

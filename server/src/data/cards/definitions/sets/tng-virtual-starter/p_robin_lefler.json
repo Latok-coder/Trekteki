@@ -1,0 +1,41 @@
+{
+  "id": "P-ROBIN-LEFLER",
+  "title": "Robin Lefler",
+  "subtitle": "Pragmatic Specialist",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 3,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Engineer",
+    "Exobiology",
+    "Physics",
+    "Science"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 5,
+  "gameText": "When any number of your Federation personnel present are about to be stopped by a dilemma that does not require a skill, if a copy of that dilemma is overcome beneath your mission, you may stop this personnel to prevent that.",
+  "abilities": [
+    {
+      "id": "rl-prevent",
+      "type": "response",
+      "trigger": "before_personnel_stopped_no_skill_dilemma",
+      "optional": true,
+      "cost": {
+        "type": "stop_self"
+      },
+      "effect": {
+        "type": "prevent"
+      }
+    }
+  ]
+}

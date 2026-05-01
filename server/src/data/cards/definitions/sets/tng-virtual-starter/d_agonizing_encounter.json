@@ -1,0 +1,28 @@
+{
+  "id": "D-AGONIZING-ENCOUNTER",
+  "title": "Agonizing Encounter",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "tng-virtual-starter",
+  "cost": 5,
+  "unique": false,
+  "gameText": "For each headquarters you command, this dilemma is cost -1. Your opponent names a skill. For each of your missions that requires that skill, randomly select a personnel to be stopped.",
+  "abilities": [
+    {
+      "id": "ae-main",
+      "type": "dilemma_effect",
+      "cost_modifier": {
+        "per_hq_you_command": -1
+      },
+      "actions": [
+        {
+          "type": "opponent_names_skill"
+        },
+        {
+          "type": "random_stop_per_mission_requiring_skill"
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

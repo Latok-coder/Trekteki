@@ -1,0 +1,32 @@
+{
+  "id": "E-ALWAYS-WELCOME",
+  "title": "Always Welcome",
+  "type": "event",
+  "set": "tng-virtual-starter",
+  "cost": 0,
+  "unique": false,
+  "gameText": "To play this event, you must command six Federation personnel. Plays in your core. When you play a Federation personnel that costs 4 or more, each player may choose one: draw a card; or discard a card from hand to draw two cards.",
+  "abilities": [
+    {
+      "id": "aw-play-req",
+      "type": "play_requirement",
+      "filter": {
+        "affiliation": "federation"
+      },
+      "count": 6
+    },
+    {
+      "id": "aw-trigger",
+      "type": "response",
+      "trigger": "you_play_fed_personnel_cost_4plus",
+      "optional": true,
+      "effect": {
+        "type": "each_player_chooses",
+        "options": [
+          "draw_1",
+          "discard_draw_2"
+        ]
+      }
+    }
+  ]
+}

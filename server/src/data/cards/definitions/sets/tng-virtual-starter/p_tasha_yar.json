@@ -1,0 +1,63 @@
+{
+  "id": "P-TASHA-YAR",
+  "title": "Tasha Yar",
+  "subtitle": "Weapons Specialist",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 3,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Honor",
+    "Leadership",
+    "Security"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 6,
+  "gameText": "When you play this personnel, each player may download a Hand Weapon. While this personnel is equipped with a Hand Weapon, she gains Honor and Security and cannot be stopped by dilemmas.",
+  "abilities": [
+    {
+      "id": "yar-download",
+      "type": "response",
+      "trigger": "on_play",
+      "optional": true,
+      "effect": {
+        "type": "each_player_download",
+        "filter": {
+          "keyword": "Hand Weapon"
+        }
+      }
+    },
+    {
+      "id": "yar-equipped",
+      "type": "continuous",
+      "condition": {
+        "type": "equipped_with",
+        "keyword": "Hand Weapon"
+      },
+      "effect": {
+        "type": "multi",
+        "effects": [
+          {
+            "type": "skill_grant",
+            "skills": [
+              "Honor",
+              "Security"
+            ]
+          },
+          {
+            "type": "cannot_be_stopped_by_dilemmas"
+          }
+        ]
+      }
+    }
+  ]
+}

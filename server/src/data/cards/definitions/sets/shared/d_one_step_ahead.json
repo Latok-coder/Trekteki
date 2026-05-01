@@ -1,0 +1,54 @@
+{
+  "id": "D-ONE-STEP-AHEAD",
+  "title": "One Step Ahead",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "Unless you have 2 Programming and 2 Transporters or two Hand Weapons, all your personnel are stopped. When you meet the requirements of this dilemma, you may stop a Security personnel to score 5 points.",
+  "abilities": [
+    {
+      "id": "osa-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skills": [
+                  "Programming",
+                  "Programming",
+                  "Transporters",
+                  "Transporters"
+                ]
+              },
+              {
+                "keywords": [
+                  "Hand Weapon"
+                ],
+                "count": 2
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stop_all"
+            }
+          ]
+        },
+        {
+          "type": "optional_bonus",
+          "condition": "requirements_met",
+          "effect": {
+            "type": "stop_security_score",
+            "points": 5
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "P-RO-LAREN",
+  "title": "Ro Laren",
+  "subtitle": "Headstrong Ensign",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": true,
+  "species": "Bajoran",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Navigation",
+    "Officer",
+    "Programming"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 4,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "While this personnel is facing a dual dilemma, she cannot be randomly selected by dilemmas.",
+  "abilities": [
+    {
+      "id": "ro-dual-protect",
+      "type": "continuous",
+      "condition": {
+        "type": "facing_dual_dilemma"
+      },
+      "effect": {
+        "type": "cannot_be_randomly_selected"
+      }
+    }
+  ]
+}

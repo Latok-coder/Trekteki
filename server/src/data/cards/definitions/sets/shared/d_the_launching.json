@@ -1,0 +1,52 @@
+{
+  "id": "D-THE-LAUNCHING",
+  "title": "The Launching",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "Unless you have 2 Astrometrics and 2 Physics or two non-Hand Weapon equipment, all your personnel are stopped. When you meet the requirements of this dilemma, you may stop an Engineer personnel to score 5 points.",
+  "abilities": [
+    {
+      "id": "tl-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skills": [
+                  "Astrometrics",
+                  "Astrometrics",
+                  "Physics",
+                  "Physics"
+                ]
+              },
+              {
+                "equipment_count": 2,
+                "not_keyword": "Hand Weapon"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stop_all"
+            }
+          ]
+        },
+        {
+          "type": "optional_bonus",
+          "condition": "requirements_met",
+          "effect": {
+            "type": "stop_engineer_score",
+            "points": 5
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

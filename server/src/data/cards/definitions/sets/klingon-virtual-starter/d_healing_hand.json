@@ -1,0 +1,25 @@
+{
+  "id": "D-HEALING-HAND",
+  "title": "Healing Hand",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Choose a Medical personnel to be stopped. Unless the personnel stopped by this dilemma has 2 Medical, this dilemma returns to its owner's dilemma pile.",
+  "abilities": [
+    {
+      "id": "hh-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "choose_to_stop",
+          "filter": {
+            "skill": "Medical"
+          }
+        }
+      ],
+      "placement": "dilemma_pile_if_no_2medical"
+    }
+  ]
+}

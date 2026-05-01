@@ -1,0 +1,40 @@
+{
+  "id": "D-THE-FIRST-DUTY",
+  "title": "The First Duty",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 1,
+  "unique": false,
+  "gameText": "Persistent. (When your personnel complete this mission, this dilemma's owner may discard a non-personnel card from hand to return this dilemma to his or her dilemma pile.) Choose a personnel who has Honor or Law to be stopped. If you cannot, randomly select a personnel to be killed.",
+  "keywords": [
+    "Persistent"
+  ],
+  "abilities": [
+    {
+      "id": "tfd-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "choose_to_stop",
+          "filter": {
+            "type": "or",
+            "filters": [
+              {
+                "skill": "Honor"
+              },
+              {
+                "skill": "Law"
+              }
+            ]
+          },
+          "fallback": {
+            "type": "random_kill",
+            "count": 1
+          }
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

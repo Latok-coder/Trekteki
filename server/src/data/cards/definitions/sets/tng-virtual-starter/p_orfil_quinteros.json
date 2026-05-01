@@ -1,0 +1,45 @@
+{
+  "id": "P-ORFIL-QUINTEROS",
+  "title": "Orfil Quinteros",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 3,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Engineer",
+    "Geology",
+    "Honor",
+    "Physics",
+    "Programming"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 7,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "When you play this personnel, each player chooses one: download a non-unique ship; draw two cards; shuffle his or her deck; or discard a card from hand to shuffle his or her dilemma pile.",
+  "abilities": [
+    {
+      "id": "oq-play",
+      "type": "response",
+      "trigger": "on_play",
+      "optional": false,
+      "effect": {
+        "type": "each_player_chooses",
+        "options": [
+          "download_nonunique_ship",
+          "draw_2",
+          "shuffle_deck",
+          "discard_shuffle_dilemma"
+        ]
+      }
+    }
+  ]
+}

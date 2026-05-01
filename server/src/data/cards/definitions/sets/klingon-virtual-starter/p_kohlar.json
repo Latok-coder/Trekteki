@@ -1,0 +1,56 @@
+{
+  "id": "P-KOHLAR",
+  "title": "Kohlar",
+  "subtitle": "Pilgrim Commander",
+  "type": "personnel",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 4,
+  "unique": true,
+  "species": "Klingon",
+  "icons": [
+    "command"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Diplomacy",
+    "Honor",
+    "Leadership",
+    "Officer"
+  ],
+  "skillLevels": {},
+  "keywords": [
+    "Commander: I.K.S. Vaq'leng"
+  ],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 7,
+  "gameText": "Commander: I.K.S. Vaq'leng. While this personnel is attempting a Klingon mission, each of your Klingon personnel present is attributes +1.",
+  "abilities": [
+    {
+      "id": "kohlar-keyword",
+      "type": "keyword",
+      "keyword": "Commander",
+      "linkedCard": "I.K.S. Vaq'leng"
+    },
+    {
+      "id": "kohlar-buff",
+      "type": "continuous",
+      "condition": {
+        "type": "attempting_klingon_mission"
+      },
+      "effect": {
+        "type": "attribute_modifier",
+        "filter": {
+          "affiliation": "klingon",
+          "present": true
+        },
+        "modifier": {
+          "integrity": 1,
+          "cunning": 1,
+          "strength": 1
+        }
+      }
+    }
+  ]
+}

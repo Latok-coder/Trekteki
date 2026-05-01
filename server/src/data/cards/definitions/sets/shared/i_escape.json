@@ -1,0 +1,32 @@
+{
+  "id": "I-ESCAPE",
+  "title": "Escape",
+  "type": "interrupt",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "When any number of your personnel facing a dilemma are about to be killed or placed in an opponent's brig, discard a random card from hand to prevent that. Those personnel are stopped instead.",
+  "abilities": [
+    {
+      "id": "esc-main",
+      "type": "response",
+      "trigger": "before_personnel_killed_or_brigged",
+      "condition": {
+        "type": "personnel_facing_dilemma"
+      },
+      "optional": true,
+      "cost": {
+        "type": "discard_random_from_hand",
+        "count": 1
+      },
+      "effect": {
+        "type": "prevent",
+        "then": {
+          "type": "stop_personnel",
+          "subject": "affected_personnel"
+        }
+      },
+      "timing": "can_play_on_opponent_turn"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "D-FERENGI-LOCATOR-BOMB",
+  "title": "Ferengi Locator Bomb",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "shared",
+  "cost": 3,
+  "unique": false,
+  "gameText": "Unless you have Navigation, Physics, and Programming or Acquisition, Treachery, and Cunning>32, randomly select a personnel to be placed on the bottom of his or her owner's deck and all your personnel are stopped.",
+  "abilities": [
+    {
+      "id": "flb-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skills": [
+                  "Navigation",
+                  "Physics",
+                  "Programming"
+                ]
+              },
+              {
+                "skills": [
+                  "Acquisition",
+                  "Treachery"
+                ],
+                "attributes": {
+                  "cunning": {
+                    "gt": 32
+                  }
+                }
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "random_deck_bottom",
+              "count": 1
+            },
+            {
+              "type": "stop_all"
+            }
+          ]
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

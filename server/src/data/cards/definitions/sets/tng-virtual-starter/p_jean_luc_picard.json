@@ -1,0 +1,49 @@
+{
+  "id": "P-JEAN-LUC-PICARD",
+  "title": "Jean-Luc Picard",
+  "subtitle": "Genial Captain",
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 3,
+  "unique": true,
+  "species": "Human",
+  "icons": [
+    "command",
+    "tng"
+  ],
+  "skills": [
+    "Archaeology",
+    "Diplomacy",
+    "Honor",
+    "Leadership"
+  ],
+  "skillLevels": {},
+  "keywords": [
+    "Commander: U.S.S. Enterprise-D"
+  ],
+  "integrity": 8,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "Commander: U.S.S. Enterprise-D. When you play this personnel, you may download U.S.S. Enterprise-D.",
+  "abilities": [
+    {
+      "id": "jlp-keyword",
+      "type": "keyword",
+      "keyword": "Commander",
+      "linkedCard": "U.S.S. Enterprise-D"
+    },
+    {
+      "id": "jlp-download",
+      "type": "response",
+      "trigger": "on_play",
+      "optional": true,
+      "effect": {
+        "type": "download",
+        "filter": {
+          "definitionId": "S-USS-ENTERPRISE-D"
+        }
+      }
+    }
+  ]
+}

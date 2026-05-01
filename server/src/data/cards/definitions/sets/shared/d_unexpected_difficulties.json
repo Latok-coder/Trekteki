@@ -1,0 +1,23 @@
+{
+  "id": "D-UNEXPECTED-DIFFICULTIES",
+  "title": "Unexpected Difficulties",
+  "type": "event",
+  "set": "shared",
+  "cost": 0,
+  "unique": false,
+  "gameText": "Plays in your core. When you have drawn dilemmas, you may destroy this event to return them to your dilemma pile and draw an equal number of dilemmas.",
+  "abilities": [
+    {
+      "id": "ud-main",
+      "type": "response",
+      "trigger": "drawn_dilemmas",
+      "optional": true,
+      "cost": {
+        "type": "destroy_self"
+      },
+      "effect": {
+        "type": "return_and_redraw_dilemmas"
+      }
+    }
+  ]
+}

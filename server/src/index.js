@@ -5,9 +5,15 @@ import cors from 'cors';
 import { LobbyManager } from './lobby/LobbyManager.js';
 import { registerLobbyHandlers } from './lobby/lobbyHandlers.js';
 import { registerChatHandlers } from './lobby/chatHandlers.js';
+import { registerCardRoutes } from './api/cardRoutes.js';
+import { cardDB } from './data/CardDatabase.js';
 
 const PORT = process.env.PORT || 3001;
 
+// ── Load card database first ─────────────────────────────────────────
+cardDB.load();
+
+// ── Express + Socket.io ──────────────────────────────────────────────
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -21,15 +27,18 @@ const io = new Server(httpServer, {
   },
 });
 
+// ── REST routes ──────────────────────────────────────────────────────
 app.get('/health', (_req, res) => {
-  res.json({ status: 'ok', rooms: lobbyManager.getRoomCount() });
+  res.json({ status: 'ok', rooms: lobbyManager.getRoomCount(), cards: cardDB.cards.size });
 });
 
+registerCardRoutes(app);
+
+// ── Socket.io ────────────────────────────────────────────────────────
 const lobbyManager = new LobbyManager();
 
 io.on('connection', (socket) => {
   console.log(`[socket] connected: ${socket.id}`);
-
   registerLobbyHandlers(io, socket, lobbyManager);
   registerChatHandlers(io, socket, lobbyManager);
 

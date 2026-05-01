@@ -1,0 +1,54 @@
+{
+  "id": "D-INFINITE-DIVERSITY",
+  "title": "Infinite Diversity",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 2,
+  "unique": false,
+  "gameText": "Your opponent discards two cards from hand to name a skill (except Acquisition, Intelligence, Law, or Telepathy). Unless you have Anthropology and that skill or Science and that skill, all your personnel are stopped.",
+  "abilities": [
+    {
+      "id": "id-main",
+      "type": "dilemma_effect",
+      "actions": [
+        {
+          "type": "opponent_discard_name_skill",
+          "discard_count": 2,
+          "excluded_skills": [
+            "Acquisition",
+            "Intelligence",
+            "Law",
+            "Telepathy"
+          ]
+        },
+        {
+          "type": "unless",
+          "requirements": {
+            "type": "or",
+            "conditions": [
+              {
+                "skills": [
+                  "Anthropology",
+                  "named_skill"
+                ]
+              },
+              {
+                "skills": [
+                  "Science",
+                  "named_skill"
+                ]
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stop_all"
+            }
+          ]
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "P-DELVOK",
+  "title": "Delvok",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 2,
+  "unique": false,
+  "species": "Vulcan",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Astrometrics",
+    "Biology",
+    "Honor",
+    "Medical",
+    "Security"
+  ],
+  "skillLevels": {},
+  "keywords": [
+    "Dissident"
+  ],
+  "integrity": 6,
+  "cunning": 6,
+  "strength": 6,
+  "gameText": "Dissident.",
+  "abilities": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "P-DANIEL-KWAN",
+  "title": "Daniel Kwan",
+  "subtitle": null,
+  "type": "personnel",
+  "set": "tng-virtual-starter",
+  "affiliation": "federation",
+  "cost": 1,
+  "unique": false,
+  "species": "Human/Napean",
+  "icons": [
+    "staff",
+    "tng"
+  ],
+  "skills": [
+    "Engineer",
+    "Physics",
+    "Telepathy"
+  ],
+  "skillLevels": {},
+  "keywords": [],
+  "integrity": 6,
+  "cunning": 5,
+  "strength": 5,
+  "gameText": "A partially empathic species, Napeans typically seek interaction with other races to explore alien thought patterns. This leads many to join Starfleet.",
+  "abilities": []
+}

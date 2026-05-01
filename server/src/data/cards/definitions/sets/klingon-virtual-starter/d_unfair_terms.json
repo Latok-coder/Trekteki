@@ -1,0 +1,35 @@
+{
+  "id": "D-UNFAIR-TERMS",
+  "title": "Unfair Terms",
+  "type": "dilemma",
+  "dilemmaType": "dual",
+  "set": "klingon-virtual-starter",
+  "cost": 6,
+  "unique": false,
+  "gameText": "For each mission worth 40 or more points that your opponent commands, this dilemma is cost -2. Randomly select three personnel. Each of those personnel who has a cost of 2 or less is killed.",
+  "abilities": [
+    {
+      "id": "ut-main",
+      "type": "dilemma_effect",
+      "cost_modifier": {
+        "per_opponent_40pt_mission": -2
+      },
+      "actions": [
+        {
+          "type": "random_select",
+          "count": 3
+        },
+        {
+          "type": "kill_if",
+          "filter": {
+            "cost": {
+              "lte": 2
+            }
+          },
+          "subject": "selected_personnel"
+        }
+      ],
+      "placement": "overcome"
+    }
+  ]
+}

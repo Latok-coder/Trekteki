@@ -1,0 +1,38 @@
+{
+  "id": "M-QONOS",
+  "title": "Qo'noS",
+  "subtitle": "Heart of the Empire",
+  "type": "mission",
+  "missionType": "headquarters",
+  "set": "klingon-virtual-starter",
+  "unique": true,
+  "affiliation": "klingon",
+  "quadrant": "A",
+  "region": "Qo'noS System",
+  "span": 2,
+  "points": null,
+  "gameText": "You may play Klingon cards, Bajoran cards, and equipment at this mission.",
+  "abilities": [
+    {
+      "id": "qonos-play",
+      "type": "continuous",
+      "effect": {
+        "type": "allow_play_at_mission",
+        "filter": {
+          "type": "or",
+          "filters": [
+            {
+              "affiliation": "klingon"
+            },
+            {
+              "affiliation": "bajoran"
+            },
+            {
+              "type": "equipment"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

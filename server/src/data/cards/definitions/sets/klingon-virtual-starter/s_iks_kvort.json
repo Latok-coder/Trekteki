@@ -1,0 +1,31 @@
+{
+  "id": "S-IKS-KVORT",
+  "title": "I.K.S. K'Vort",
+  "subtitle": null,
+  "type": "ship",
+  "set": "klingon-virtual-starter",
+  "affiliation": "klingon",
+  "cost": 4,
+  "unique": false,
+  "shipClass": "K'Vort Class",
+  "icons": [],
+  "staffingRequirements": [
+    "command",
+    "staff",
+    "staff"
+  ],
+  "range": 7,
+  "weapons": 8,
+  "shields": 7,
+  "keywords": [
+    "Cloaking Device"
+  ],
+  "gameText": "Cloaking Device.",
+  "abilities": [
+    {
+      "id": "kvort-cloak",
+      "type": "keyword",
+      "keyword": "Cloaking Device"
+    }
+  ]
+}
